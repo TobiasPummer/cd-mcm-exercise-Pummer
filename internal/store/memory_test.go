@@ -101,7 +101,6 @@ func TestDeleteNonExistent(t *testing.T) {
 	}
 }
 
-// TABLE-DRIVEN TEST (Pflicht für Aufgabe)
 func TestGetByIDNotFound(t *testing.T) {
 	s := NewMemoryStore()
 
