@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: go build -o api-server ./cmd/api
 
-docker-build:
+  docker-build:
     needs: test
     runs-on: ubuntu-latest
 
