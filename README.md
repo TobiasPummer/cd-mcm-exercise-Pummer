@@ -1,3 +1,5 @@
+![CI](https://github.com/TobiasPummer/CI-CD-MCM/actions/workflows/ci.yml/badge.svg?branch=exercise%2F02-microservice-docker)
+
 # Exercise 2: Microservice Architecture, Docker & GitHub Actions
 
 **Course:** Continuous Delivery in Agile Software Development (Master)
