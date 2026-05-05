@@ -1,4 +1,4 @@
-![CI](https://github.com/TobiasPummer/CI-CD-MCM/actions/workflows/ci.yml/badge.svg?branch=exercise%2F02-microservice-docker)
+![CI](https://github.com/TobiasPummer/cd-mcm-exercise-Pummer/actions/workflows/ci.yml/badge.svg?branch=main)
 
 # Exercise 2: Microservice Architecture, Docker & GitHub Actions
 
