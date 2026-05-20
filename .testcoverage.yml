@@ -1,0 +1,8 @@
+threshold:
+  total: 80
+
+exclude:
+  paths:
+    - internal/store/postgres.go
+    - internal/handler/postgres_handler.go
+    - cmd/api/main.go
