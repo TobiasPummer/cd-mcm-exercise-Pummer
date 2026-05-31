@@ -125,7 +125,7 @@ jobs:
           load: true
 
       - name: Run Trivy scan (JSON report)
-        uses: aquasecurity/trivy-action@0.30.0
+        uses: aquasecurity/trivy-action@v0.35.0
         with:
           image-ref: product-catalog:latest
           format: json
@@ -141,7 +141,7 @@ jobs:
           path: trivy-report.json
 
       - name: Fail on CRITICAL or HIGH vulnerabilities
-        uses: aquasecurity/trivy-action@0.30.0
+        uses: aquasecurity/trivy-action@v0.35.0
         with:
           image-ref: product-catalog:latest
           format: table
