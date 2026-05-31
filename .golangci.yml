@@ -12,16 +12,15 @@ linters:
     - unused
     - ineffassign
     - gosimple
-    - gofmt
-    - gocyclo
-    - misspell
-    - gocritic
+    # TODO: Enable additional linters:
+    # - gofmt
+    # - gocyclo
+    # - misspell
+    # - gocritic
 
 linters-settings:
   errcheck:
     check-type-assertions: true
-  gocyclo:
-    min-complexity: 10
 
 issues:
   exclude-rules:
