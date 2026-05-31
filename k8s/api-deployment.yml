@@ -13,11 +13,11 @@ spec:
       labels:
         app: product-catalog-api
     spec:
+      automountServiceAccountToken: false
       containers:
         - name: api
           image: product-catalog:latest
-          # TODO: Replace with your actual image from GHCR or local build
-          imagePullPolicy: Never  # For Minikube local images
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080
           env:

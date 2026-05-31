@@ -36,6 +36,7 @@ spec:
       labels:
         app: postgres
     spec:
+      automountServiceAccountToken: false
       containers:
         - name: postgres
           image: postgres:16-alpine
@@ -52,6 +53,13 @@ spec:
               command: ["pg_isready", "-U", "catalog", "-d", "productcatalog"]
             initialDelaySeconds: 5
             periodSeconds: 10
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
       volumes:
         - name: postgres-storage
           persistentVolumeClaim:
