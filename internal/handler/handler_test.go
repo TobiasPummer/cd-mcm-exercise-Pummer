@@ -76,5 +76,3 @@ func TestGetProductNotFound(t *testing.T) {
 		t.Errorf("expected 404, got %d", rr.Code)
 	}
 }
-
-// TODO: Add tests for UpdateProduct, DeleteProduct, and invalid payloads
